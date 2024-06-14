@@ -1,0 +1,3978 @@
+Model {
+  Name			  "openloop_on_ramp_mdl"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Sep 14 18:59:05 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "kontorou"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Jul 24 16:48:26 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:68>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "1097"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "openloop_on_ramp_mdl"
+    Location		    [480, 85, 980, 386]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "84"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Boundary\nconditions"
+      Ports		      [0, 3]
+      Position		      [90, 126, 170, 274]
+      BackgroundColor	      "cyan"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskDisplay	      "disp('Disturbances')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Boundary\nconditions"
+	Location		[250, 258, 657, 538]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "downstream velocity"
+	  Position		  [20, 116, 140, 144]
+	  VariableName		  "[t_in, v_in]"
+	  SampleTime		  "0"
+	  Interpolate		  on
+	  OutputAfterFinalValue	  "Extrapolation"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "downstream velocity\n(km/hour)"
+	  Position		  [210, 50, 270, 80]
+	  VariableName		  "v_in_dt"
+	  MaxDataPoints		  "inf"
+	  Decimation		  "1"
+	  SampleTime		  "dt"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "upstream flow"
+	  Position		  [25, 169, 140, 191]
+	  VariableName		  "[t_in, q_in]"
+	  SampleTime		  "0"
+	  Interpolate		  on
+	  OutputAfterFinalValue	  "Extrapolation"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "upstream flow1"
+	  Position		  [25, 224, 140, 246]
+	  VariableName		  "[t_in, q_ramp]"
+	  SampleTime		  "0"
+	  Interpolate		  on
+	  OutputAfterFinalValue	  "Extrapolation"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [200, 123, 230, 137]
+	  BackgroundColor	  "green"
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [200, 173, 230, 187]
+	  BackgroundColor	  "green"
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  Position		  [195, 228, 225, 242]
+	  BackgroundColor	  "green"
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "downstream velocity"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -65]
+	    DstBlock		    "downstream velocity\n(km/hour)"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "upstream flow"
+	  SrcPort		  1
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "upstream flow1"
+	  SrcPort		  1
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Logged macroscopic\noutput variables"
+      Ports		      [3]
+      Position		      [490, 142, 590, 258]
+      BackgroundColor	      "cyan"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskDisplay	      "disp('Data')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Logged macroscopic\noutput variables"
+	Location		[481, 327, 892, 521]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "inport 1"
+	  Position		  [20, 23, 50, 37]
+	  BackgroundColor	  "magenta"
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "inport 2"
+	  Position		  [20, 88, 50, 102]
+	  BackgroundColor	  "magenta"
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "inport 3"
+	  Position		  [20, 153, 50, 167]
+	  BackgroundColor	  "magenta"
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  Position		  [200, 75, 220, 95]
+	  DisplayTime		  off
+	  Decimation		  "1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "density"
+	  Position		  [100, 15, 160, 45]
+	  VariableName		  "dd"
+	  MaxDataPoints		  "inf"
+	  Decimation		  "1"
+	  SampleTime		  "dt"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "flow"
+	  Position		  [100, 80, 160, 110]
+	  VariableName		  "qq"
+	  MaxDataPoints		  "inf"
+	  Decimation		  "1"
+	  SampleTime		  "dt"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "time (sample)"
+	  Position		  [275, 70, 335, 100]
+	  VariableName		  "tt"
+	  MaxDataPoints		  "inf"
+	  Decimation		  "1"
+	  SampleTime		  "dt"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "velocity"
+	  Position		  [100, 145, 160, 175]
+	  VariableName		  "vv"
+	  MaxDataPoints		  "inf"
+	  Decimation		  "1"
+	  SampleTime		  "dt"
+	  SaveFormat		  "Array"
+	}
+	Line {
+	  SrcBlock		  "inport 3"
+	  SrcPort		  1
+	  DstBlock		  "velocity"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "inport 1"
+	  SrcPort		  1
+	  DstBlock		  "density"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "inport 2"
+	  SrcPort		  1
+	  DstBlock		  "flow"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  DstBlock		  "time (sample)"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem"
+      Ports		      [3, 3]
+      Position		      [255, 124, 375, 276]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Subsystem"
+	Location		[2, 74, 1014, 724]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [735, 58, 765, 72]
+	  Orientation		  "left"
+	  BackgroundColor	  "green"
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  Position		  [45, 173, 75, 187]
+	  BackgroundColor	  "green"
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In3"
+	  Position		  [45, 318, 75, 332]
+	  BackgroundColor	  "green"
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [5, 1]
+	  Position		  [715, 305, 720, 375]
+	  ShowName		  off
+	  Inputs		  "5"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  Ports			  [6, 1]
+	  Position		  [715, 220, 720, 290]
+	  ShowName		  off
+	  Inputs		  "6"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux2"
+	  Ports			  [5, 1]
+	  Position		  [715, 103, 720, 177]
+	  ShowName		  off
+	  Inputs		  "5"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "STM\nJunction"
+	  Ports			  [3, 3]
+	  Position		  [300, 119, 350, 201]
+	  BackgroundColor	  "cyan"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "STM\nJunction"
+	    Location		    [269, 210, 970, 532]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "downstream\nvelocity (km/hour)"
+	      Position		      [40, 155, 60, 175]
+	      BackgroundColor	      "magenta"
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "upstream flow\n(veh/min)"
+	      Position		      [40, 85, 60, 105]
+	      BackgroundColor	      "magenta"
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "on-ramp flow\n(veh/min)"
+	      Position		      [40, 15, 60, 35]
+	      BackgroundColor	      "magenta"
+	      Port		      "3"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "density coefficient"
+	      Position		      [195, 15, 300, 75]
+	      Gain		      "stm_ks3"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "density-velocity\ntraffic diagram"
+	      Ports		      [1, 1]
+	      Position		      [135, 224, 170, 256]
+	      Orientation	      "left"
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Fundamental Traffic Diagram"
+	      MaskDescription	      "Traffic diagram for density-velocity re"
+"lationship."
+	      MaskHelp		      "Connect traffic density to the input an"
+"d velocity to the output. Based on figure 4 of J. Whittaker, S. Garside and K"
+". Lindveld (1997) Tracking and predicting a network traffic process, Internat"
+"ional Journal of Forecasting 13, 51-61."
+	      MaskPromptString	      "Minimum velocity:|Critical velocity:|Ma"
+"ximum velocity:|Critical density:|Theoretical density for zero velocity:"
+	      MaskStyleString	      "edit,edit,edit,edit,edit"
+	      MaskTunableValueString  "on,on,on,on,on"
+	      MaskCallbackString      "||||"
+	      MaskEnableString	      "on,on,on,on,on"
+	      MaskVisibilityString    "on,on,on,on,on"
+	      MaskToolTipString	      "on,on,on,on,on"
+	      MaskVariables	      "v1=@1;v2=@2;v3=@3;r1=@4;r3=@5;"
+	      MaskDisplay	      "disp('FTD')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "stm_ftd(3,1)|stm_ftd(3,2)|stm_ftd(3,3)|"
+"stm_ftd(3,4)|stm_ftd(3,5)"
+	      MaskVariableAliases     ",,,,"
+	      System {
+		Name			"density-velocity\ntraffic diagram"
+		Location		[105, 214, 753, 539]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "density"
+		  Position		  [15, 125, 35, 145]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  Position		  [325, 90, 360, 190]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  Position		  [500, 125, 535, 225]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c1"
+		  Position		  [145, 170, 175, 190]
+		  Orientation		  "up"
+		  Value			  "r1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c2"
+		  Position		  [140, 25, 170, 45]
+		  NamePlacement		  "alternate"
+		  Value			  "v3"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c3"
+		  Position		  [326, 280, 474, 305]
+		  Orientation		  "up"
+		  Value			  "1/(1/r3+(v1/v2)*(1/r1-1/r3))"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c4"
+		  Position		  [425, 227, 455, 253]
+		  Value			  "v1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Fcn
+		  Name			  "curve"
+		  Position		  [220, 200, 260, 220]
+		  Expr			  "(v2/(1/r1-1/r3))*(1/u[1]-1/r3)"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "gain"
+		  Position		  [85, 53, 190, 107]
+		  Gain			  "(v3-v2)/r1"
+		  Multiplication	  "Element-wise(K.*u)"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [230, 65, 250, 85]
+		  IconShape		  "rectangular"
+		  Inputs		  "+-"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum2"
+		  Ports			  [2, 1]
+		  Position		  [230, 130, 250, 150]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum3"
+		  Ports			  [2, 1]
+		  Position		  [430, 165, 450, 185]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "velocity"
+		  Position		  [600, 165, 620, 185]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "c4"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -30]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "sum3"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "c3"
+		  SrcPort		  1
+		  Points		  [0, -95]
+		  DstBlock		  "sum3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "curve"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, -35]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c1"
+		  SrcPort		  1
+		  Points		  [0, -20]
+		  DstBlock		  "sum2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum2"
+		  SrcPort		  1
+		  DstBlock		  "Switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "velocity"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c2"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 35]
+		  DstBlock		  "sum1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "density"
+		  SrcPort		  1
+		  Points		  [5, 0; 10, 0]
+		  Branch {
+		    Points		    [0, 75]
+		    Branch {
+		    Points		    [0, 40; 325, 0; 0, -80]
+		    DstBlock		    "sum3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "curve"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "gain"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "sum2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "gain"
+		  SrcPort		  1
+		  DstBlock		  "sum1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 30]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Annotation {
+		  Position		  [437, 17]
+		  VerticalAlignment	  "top"
+		  Text			  "Equations from C.J. Taylor and J. W"
+"hittaker (1998) Statistical Traffic Model\nof the Amsterdam A10 West, CRES TR"
+"/159, Lancaster University.\nJames Taylor - Lancaster University - 29 March 2"
+"002"
+		  FontName		  "Arial"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "flow coefficient"
+	      Position		      [195, 145, 300, 205]
+	      Gain		      "stm_alpha"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "minimum"
+	      Ports		      [2, 1]
+	      Position		      [135, 157, 170, 188]
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Minimum"
+	      MaskDescription	      "Selects minimum of two inputs."
+	      MaskHelp		      "The output of this block is the minimum"
+" of the two input signals."
+	      MaskDisplay	      "disp('MIN')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"minimum"
+		Location		[195, 302, 510, 494]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport1"
+		  Position		  [50, 15, 70, 35]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport2"
+		  Position		  [50, 85, 70, 105]
+		  BackgroundColor	  "magenta"
+		  Port			  "2"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [115, 43, 135, 72]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "switch1"
+		  Position		  [195, 35, 220, 85]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "outport"
+		  Position		  [245, 50, 265, 70]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  DstBlock		  "switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "switch1"
+		  SrcPort		  1
+		  DstBlock		  "outport"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "inport2"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, -20]
+		    DstBlock		    "switch1"
+		    DstPort		    3
+		  }
+		  Branch {
+		    Points		    [0, -30]
+		    DstBlock		    "sum1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "inport1"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, 20]
+		    DstBlock		    "switch1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 25]
+		    DstBlock		    "sum1"
+		    DstPort		    1
+		  }
+		}
+		Annotation {
+		  Position		  [157, 142]
+		  VerticalAlignment	  "top"
+		  Text			  "Output is the minimum of the two in"
+"put signals\nJames Taylor - Lancaster University - 29 March 2002"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "product1"
+	      Ports		      [2, 1]
+	      Position		      [340, 167, 360, 198]
+	      Inputs		      "2"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum1"
+	      Ports		      [3, 1]
+	      Position		      [145, 12, 175, 78]
+	      IconShape		      "rectangular"
+	      Inputs		      "++-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum2"
+	      Ports		      [2, 1]
+	      Position		      [340, 39, 360, 66]
+	      IconShape		      "rectangular"
+	      Inputs		      "++"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay1"
+	      Position		      [390, 45, 440, 65]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay2"
+	      Position		      [390, 175, 440, 195]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link velocity\n(km/hour)"
+	      Position		      [40, 230, 60, 250]
+	      Orientation	      "left"
+	      BackgroundColor	      "green"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link flow\n(veh/min)"
+	      Position		      [565, 170, 585, 190]
+	      BackgroundColor	      "green"
+	      Port		      "2"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link density\n(veh/km)"
+	      Position		      [650, 45, 670, 65]
+	      BackgroundColor	      "green"
+	      Port		      "3"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "on-ramp flow\n(veh/min)"
+	      SrcPort		      1
+	      DstBlock		      "sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "upstream flow\n(veh/min)"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -50]
+	      DstBlock		      "sum1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "flow coefficient"
+	      SrcPort		      1
+	      DstBlock		      "product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "product1"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "downstream\nvelocity (km/hour)"
+	      SrcPort		      1
+	      DstBlock		      "minimum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay2"
+	      SrcPort		      1
+	      Points		      [65, 0; 0, -5; 15, 0]
+	      Branch {
+		DstBlock		"link flow\n(veh/min)"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -70; -415, 0; 0, -45]
+		DstBlock		"sum1"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "sum1"
+	      SrcPort		      1
+	      DstBlock		      "density coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "minimum"
+	      SrcPort		      1
+	      DstBlock		      "flow coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay1"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		Points			[155, 0]
+		Branch {
+		  Points		  [0, 185; -300, 0]
+		  Branch {
+		    Points		    [0, -50]
+		    DstBlock		    "product1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "density-velocity\ntraffic diagram"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  DstBlock		  "link density\n(veh/km)"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 45; -145, 0; 0, -40]
+		DstBlock		"sum2"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "density coefficient"
+	      SrcPort		      1
+	      DstBlock		      "sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "sum2"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "density-velocity\ntraffic diagram"
+	      SrcPort		      1
+	      Points		      [0, 0; -20, 0]
+	      Branch {
+		Points			[0, -60]
+		DstBlock		"minimum"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"link velocity\n(km/hour)"
+		DstPort			1
+	      }
+	    }
+	    Annotation {
+	      Position		      [477, 262]
+	      VerticalAlignment	      "top"
+	      Text		      "Statistical Traffic Model (STM) join se"
+"ction\nbased on the minimum velocity flow equation\nJames Taylor - Lancaster "
+"University - 29 March 2002"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "STM Link\n1"
+	  Ports			  [2, 3]
+	  Position		  [105, 119, 155, 201]
+	  BackgroundColor	  "cyan"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "STM Link\n1"
+	    Location		    [62, 315, 920, 648]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "downstream\nvelocity (km/hour)"
+	      Position		      [40, 155, 60, 175]
+	      BackgroundColor	      "magenta"
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "upstream flow\n(veh/min)"
+	      Position		      [40, 20, 60, 40]
+	      BackgroundColor	      "magenta"
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "density coefficient"
+	      Position		      [195, 15, 300, 75]
+	      Gain		      "stm_ks"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "density-velocity\ntraffic diagram"
+	      Ports		      [1, 1]
+	      Position		      [135, 224, 170, 256]
+	      Orientation	      "left"
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Fundamental Traffic Diagram"
+	      MaskDescription	      "Traffic diagram for density-velocity re"
+"lationship."
+	      MaskHelp		      "Connect traffic density to the input an"
+"d velocity to the output. Based on figure 4 of J. Whittaker, S. Garside and K"
+". Lindveld (1997) Tracking and predicting a network traffic process, Internat"
+"ional Journal of Forecasting 13, 51-61."
+	      MaskPromptString	      "Minimum velocity:|Critical velocity:|Ma"
+"ximum velocity:|Critical density:|Theoretical density for zero velocity:"
+	      MaskStyleString	      "edit,edit,edit,edit,edit"
+	      MaskTunableValueString  "on,on,on,on,on"
+	      MaskCallbackString      "||||"
+	      MaskEnableString	      "on,on,on,on,on"
+	      MaskVisibilityString    "on,on,on,on,on"
+	      MaskToolTipString	      "on,on,on,on,on"
+	      MaskVariables	      "v1=@1;v2=@2;v3=@3;r1=@4;r3=@5;"
+	      MaskDisplay	      "disp('FTD')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "stm_ftd(1,1)|stm_ftd(1,2)|stm_ftd(1,3)|"
+"stm_ftd(1,4)|stm_ftd(1,5)"
+	      MaskVariableAliases     ",,,,"
+	      System {
+		Name			"density-velocity\ntraffic diagram"
+		Location		[105, 214, 753, 539]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "density"
+		  Position		  [15, 125, 35, 145]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  Position		  [325, 90, 360, 190]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  Position		  [500, 125, 535, 225]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c1"
+		  Position		  [145, 170, 175, 190]
+		  Orientation		  "up"
+		  Value			  "r1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c2"
+		  Position		  [140, 25, 170, 45]
+		  NamePlacement		  "alternate"
+		  Value			  "v3"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c3"
+		  Position		  [326, 280, 474, 305]
+		  Orientation		  "up"
+		  Value			  "1/(1/r3+(v1/v2)*(1/r1-1/r3))"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c4"
+		  Position		  [425, 227, 455, 253]
+		  Value			  "v1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Fcn
+		  Name			  "curve"
+		  Position		  [220, 200, 260, 220]
+		  Expr			  "(v2/(1/r1-1/r3))*(1/u[1]-1/r3)"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "gain"
+		  Position		  [85, 53, 190, 107]
+		  Gain			  "(v3-v2)/r1"
+		  Multiplication	  "Element-wise(K.*u)"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [230, 65, 250, 85]
+		  IconShape		  "rectangular"
+		  Inputs		  "+-"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum2"
+		  Ports			  [2, 1]
+		  Position		  [230, 130, 250, 150]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum3"
+		  Ports			  [2, 1]
+		  Position		  [430, 165, 450, 185]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "velocity"
+		  Position		  [600, 165, 620, 185]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "c4"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -30]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "sum3"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "c3"
+		  SrcPort		  1
+		  Points		  [0, -95]
+		  DstBlock		  "sum3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "curve"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, -35]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c1"
+		  SrcPort		  1
+		  Points		  [0, -20]
+		  DstBlock		  "sum2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum2"
+		  SrcPort		  1
+		  DstBlock		  "Switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "velocity"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c2"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 35]
+		  DstBlock		  "sum1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "density"
+		  SrcPort		  1
+		  Points		  [5, 0; 10, 0]
+		  Branch {
+		    Points		    [0, 75]
+		    Branch {
+		    Points		    [0, 40; 325, 0; 0, -80]
+		    DstBlock		    "sum3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "curve"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "gain"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "sum2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "gain"
+		  SrcPort		  1
+		  DstBlock		  "sum1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 30]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Annotation {
+		  Position		  [437, 17]
+		  VerticalAlignment	  "top"
+		  Text			  "Equations from C.J. Taylor and J. W"
+"hittaker (1998) Statistical Traffic Model\nof the Amsterdam A10 West, CRES TR"
+"/159, Lancaster University.\nJames Taylor - Lancaster University - 29 March 2"
+"002"
+		  FontName		  "Arial"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "flow coefficient"
+	      Position		      [195, 145, 300, 205]
+	      Gain		      "stm_alpha"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "minimum"
+	      Ports		      [2, 1]
+	      Position		      [135, 157, 170, 188]
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Minimum"
+	      MaskDescription	      "Selects minimum of two inputs."
+	      MaskHelp		      "The output of this block is the minimum"
+" of the two input signals."
+	      MaskDisplay	      "disp('MIN')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"minimum"
+		Location		[195, 302, 510, 494]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport1"
+		  Position		  [50, 15, 70, 35]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport2"
+		  Position		  [50, 85, 70, 105]
+		  BackgroundColor	  "magenta"
+		  Port			  "2"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [115, 43, 135, 72]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "switch1"
+		  Position		  [195, 35, 220, 85]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "outport"
+		  Position		  [245, 50, 265, 70]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  DstBlock		  "switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "switch1"
+		  SrcPort		  1
+		  DstBlock		  "outport"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "inport2"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, -20]
+		    DstBlock		    "switch1"
+		    DstPort		    3
+		  }
+		  Branch {
+		    Points		    [0, -30]
+		    DstBlock		    "sum1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "inport1"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, 20]
+		    DstBlock		    "switch1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 25]
+		    DstBlock		    "sum1"
+		    DstPort		    1
+		  }
+		}
+		Annotation {
+		  Position		  [157, 142]
+		  VerticalAlignment	  "top"
+		  Text			  "Output is the minimum of the two in"
+"put signals\nJames Taylor - Lancaster University - 29 March 2002"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "product1"
+	      Ports		      [2, 1]
+	      Position		      [340, 167, 360, 198]
+	      Inputs		      "2"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum1"
+	      Ports		      [2, 1]
+	      Position		      [140, 15, 170, 70]
+	      IconShape		      "rectangular"
+	      Inputs		      "+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum2"
+	      Ports		      [2, 1]
+	      Position		      [340, 39, 360, 66]
+	      IconShape		      "rectangular"
+	      Inputs		      "++"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay1"
+	      Position		      [390, 45, 440, 65]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay2"
+	      Position		      [390, 175, 440, 195]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link velocity\n(km/hour)"
+	      Position		      [40, 230, 60, 250]
+	      Orientation	      "left"
+	      BackgroundColor	      "green"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link flow\n(veh/min)"
+	      Position		      [800, 172, 825, 198]
+	      BackgroundColor	      "green"
+	      Port		      "2"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link density\n(veh/km)"
+	      Position		      [805, 45, 825, 65]
+	      BackgroundColor	      "green"
+	      Port		      "3"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "flow coefficient"
+	      SrcPort		      1
+	      DstBlock		      "product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "product1"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "downstream\nvelocity (km/hour)"
+	      SrcPort		      1
+	      DstBlock		      "minimum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay2"
+	      SrcPort		      1
+	      Points		      [65, 0; 15, 0]
+	      Branch {
+		Points			[0, -75; -415, 0; 0, -55]
+		DstBlock		"sum1"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"link flow\n(veh/min)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "sum1"
+	      SrcPort		      1
+	      DstBlock		      "density coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "minimum"
+	      SrcPort		      1
+	      DstBlock		      "flow coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay1"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		Points			[310, 0]
+		Branch {
+		  Points		  [0, 185; -460, 0]
+		  Branch {
+		    Points		    [0, -50]
+		    DstBlock		    "product1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "density-velocity\ntraffic diagram"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  DstBlock		  "link density\n(veh/km)"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 45; -145, 0; 0, -40]
+		DstBlock		"sum2"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "density coefficient"
+	      SrcPort		      1
+	      DstBlock		      "sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "sum2"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "density-velocity\ntraffic diagram"
+	      SrcPort		      1
+	      Points		      [0, 0; -20, 0]
+	      Branch {
+		Points			[0, -60]
+		DstBlock		"minimum"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"link velocity\n(km/hour)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "upstream flow\n(veh/min)"
+	      SrcPort		      1
+	      DstBlock		      "sum1"
+	      DstPort		      1
+	    }
+	    Annotation {
+	      Position		      [51, 74]
+	      Text		      "q(s-1,t)"
+	    }
+	    Annotation {
+	      Position		      [810, 227]
+	      Text		      "q(s,t)"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "STM Link\n2"
+	  Ports			  [2, 3]
+	  Position		  [200, 119, 250, 201]
+	  BackgroundColor	  "cyan"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "STM Link\n2"
+	    Location		    [74, 362, 932, 695]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "downstream\nvelocity (km/hour)"
+	      Position		      [40, 155, 60, 175]
+	      BackgroundColor	      "magenta"
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "upstream flow\n(veh/min)"
+	      Position		      [40, 20, 60, 40]
+	      BackgroundColor	      "magenta"
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "density coefficient"
+	      Position		      [195, 15, 300, 75]
+	      Gain		      "stm_ks2"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "density-velocity\ntraffic diagram"
+	      Ports		      [1, 1]
+	      Position		      [135, 224, 170, 256]
+	      Orientation	      "left"
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Fundamental Traffic Diagram"
+	      MaskDescription	      "Traffic diagram for density-velocity re"
+"lationship."
+	      MaskHelp		      "Connect traffic density to the input an"
+"d velocity to the output. Based on figure 4 of J. Whittaker, S. Garside and K"
+". Lindveld (1997) Tracking and predicting a network traffic process, Internat"
+"ional Journal of Forecasting 13, 51-61."
+	      MaskPromptString	      "Minimum velocity:|Critical velocity:|Ma"
+"ximum velocity:|Critical density:|Theoretical density for zero velocity:"
+	      MaskStyleString	      "edit,edit,edit,edit,edit"
+	      MaskTunableValueString  "on,on,on,on,on"
+	      MaskCallbackString      "||||"
+	      MaskEnableString	      "on,on,on,on,on"
+	      MaskVisibilityString    "on,on,on,on,on"
+	      MaskToolTipString	      "on,on,on,on,on"
+	      MaskVariables	      "v1=@1;v2=@2;v3=@3;r1=@4;r3=@5;"
+	      MaskDisplay	      "disp('FTD')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "stm_ftd(2,1)|stm_ftd(2,2)|stm_ftd(2,3)|"
+"stm_ftd(2,4)|stm_ftd(2,5)"
+	      MaskVariableAliases     ",,,,"
+	      System {
+		Name			"density-velocity\ntraffic diagram"
+		Location		[105, 214, 753, 539]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "density"
+		  Position		  [15, 125, 35, 145]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  Position		  [325, 90, 360, 190]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  Position		  [500, 125, 535, 225]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c1"
+		  Position		  [145, 170, 175, 190]
+		  Orientation		  "up"
+		  Value			  "r1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c2"
+		  Position		  [140, 25, 170, 45]
+		  NamePlacement		  "alternate"
+		  Value			  "v3"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c3"
+		  Position		  [326, 280, 474, 305]
+		  Orientation		  "up"
+		  Value			  "1/(1/r3+(v1/v2)*(1/r1-1/r3))"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c4"
+		  Position		  [425, 227, 455, 253]
+		  Value			  "v1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Fcn
+		  Name			  "curve"
+		  Position		  [220, 200, 260, 220]
+		  Expr			  "(v2/(1/r1-1/r3))*(1/u[1]-1/r3)"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "gain"
+		  Position		  [85, 53, 190, 107]
+		  Gain			  "(v3-v2)/r1"
+		  Multiplication	  "Element-wise(K.*u)"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [230, 65, 250, 85]
+		  IconShape		  "rectangular"
+		  Inputs		  "+-"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum2"
+		  Ports			  [2, 1]
+		  Position		  [230, 130, 250, 150]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum3"
+		  Ports			  [2, 1]
+		  Position		  [430, 165, 450, 185]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "velocity"
+		  Position		  [600, 165, 620, 185]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "c4"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -30]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "sum3"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "c3"
+		  SrcPort		  1
+		  Points		  [0, -95]
+		  DstBlock		  "sum3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "curve"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, -35]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c1"
+		  SrcPort		  1
+		  Points		  [0, -20]
+		  DstBlock		  "sum2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum2"
+		  SrcPort		  1
+		  DstBlock		  "Switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "velocity"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c2"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 35]
+		  DstBlock		  "sum1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "density"
+		  SrcPort		  1
+		  Points		  [5, 0; 10, 0]
+		  Branch {
+		    Points		    [0, 75]
+		    Branch {
+		    Points		    [0, 40; 325, 0; 0, -80]
+		    DstBlock		    "sum3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "curve"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "gain"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "sum2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "gain"
+		  SrcPort		  1
+		  DstBlock		  "sum1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 30]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Annotation {
+		  Position		  [437, 17]
+		  VerticalAlignment	  "top"
+		  Text			  "Equations from C.J. Taylor and J. W"
+"hittaker (1998) Statistical Traffic Model\nof the Amsterdam A10 West, CRES TR"
+"/159, Lancaster University.\nJames Taylor - Lancaster University - 29 March 2"
+"002"
+		  FontName		  "Arial"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "flow coefficient"
+	      Position		      [195, 145, 300, 205]
+	      Gain		      "stm_alpha"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "minimum"
+	      Ports		      [2, 1]
+	      Position		      [135, 157, 170, 188]
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Minimum"
+	      MaskDescription	      "Selects minimum of two inputs."
+	      MaskHelp		      "The output of this block is the minimum"
+" of the two input signals."
+	      MaskDisplay	      "disp('MIN')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"minimum"
+		Location		[195, 302, 510, 494]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport1"
+		  Position		  [50, 15, 70, 35]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport2"
+		  Position		  [50, 85, 70, 105]
+		  BackgroundColor	  "magenta"
+		  Port			  "2"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [115, 43, 135, 72]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "switch1"
+		  Position		  [195, 35, 220, 85]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "outport"
+		  Position		  [245, 50, 265, 70]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  DstBlock		  "switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "switch1"
+		  SrcPort		  1
+		  DstBlock		  "outport"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "inport2"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, -20]
+		    DstBlock		    "switch1"
+		    DstPort		    3
+		  }
+		  Branch {
+		    Points		    [0, -30]
+		    DstBlock		    "sum1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "inport1"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, 20]
+		    DstBlock		    "switch1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 25]
+		    DstBlock		    "sum1"
+		    DstPort		    1
+		  }
+		}
+		Annotation {
+		  Position		  [157, 142]
+		  VerticalAlignment	  "top"
+		  Text			  "Output is the minimum of the two in"
+"put signals\nJames Taylor - Lancaster University - 29 March 2002"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "product1"
+	      Ports		      [2, 1]
+	      Position		      [340, 167, 360, 198]
+	      Inputs		      "2"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum1"
+	      Ports		      [2, 1]
+	      Position		      [140, 15, 170, 70]
+	      IconShape		      "rectangular"
+	      Inputs		      "+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum2"
+	      Ports		      [2, 1]
+	      Position		      [340, 39, 360, 66]
+	      IconShape		      "rectangular"
+	      Inputs		      "++"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay1"
+	      Position		      [390, 45, 440, 65]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay2"
+	      Position		      [390, 175, 440, 195]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link velocity\n(km/hour)"
+	      Position		      [40, 230, 60, 250]
+	      Orientation	      "left"
+	      BackgroundColor	      "green"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link flow\n(veh/min)"
+	      Position		      [800, 167, 825, 193]
+	      BackgroundColor	      "green"
+	      Port		      "2"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link density\n(veh/km)"
+	      Position		      [805, 45, 825, 65]
+	      BackgroundColor	      "green"
+	      Port		      "3"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "flow coefficient"
+	      SrcPort		      1
+	      DstBlock		      "product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "product1"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "downstream\nvelocity (km/hour)"
+	      SrcPort		      1
+	      DstBlock		      "minimum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay2"
+	      SrcPort		      1
+	      Points		      [65, 0; 0, -5; 15, 0]
+	      Branch {
+		Points			[0, -70; -415, 0; 0, -55]
+		DstBlock		"sum1"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"link flow\n(veh/min)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "sum1"
+	      SrcPort		      1
+	      DstBlock		      "density coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "minimum"
+	      SrcPort		      1
+	      DstBlock		      "flow coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay1"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		Points			[310, 0]
+		Branch {
+		  Points		  [0, 185; -460, 0]
+		  Branch {
+		    Points		    [0, -50]
+		    DstBlock		    "product1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "density-velocity\ntraffic diagram"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  DstBlock		  "link density\n(veh/km)"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 45; -145, 0; 0, -40]
+		DstBlock		"sum2"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "density coefficient"
+	      SrcPort		      1
+	      DstBlock		      "sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "sum2"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "density-velocity\ntraffic diagram"
+	      SrcPort		      1
+	      Points		      [0, 0; -20, 0]
+	      Branch {
+		Points			[0, -60]
+		DstBlock		"minimum"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"link velocity\n(km/hour)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "upstream flow\n(veh/min)"
+	      SrcPort		      1
+	      DstBlock		      "sum1"
+	      DstPort		      1
+	    }
+	    Annotation {
+	      Position		      [51, 74]
+	      Text		      "q(s-1,t)"
+	    }
+	    Annotation {
+	      Position		      [810, 227]
+	      Text		      "q(s,t)"
+	    }
+	    Annotation {
+	      Position		      [171, 249]
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "STM Link\n3"
+	  Ports			  [2, 3]
+	  Position		  [400, 119, 450, 201]
+	  BackgroundColor	  "cyan"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "STM Link\n3"
+	    Location		    [15, 362, 873, 695]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "downstream\nvelocity (km/hour)"
+	      Position		      [40, 155, 60, 175]
+	      BackgroundColor	      "magenta"
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "upstream flow\n(veh/min)"
+	      Position		      [40, 20, 60, 40]
+	      BackgroundColor	      "magenta"
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "density coefficient"
+	      Position		      [195, 15, 300, 75]
+	      Gain		      "stm_ks4"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "density-velocity\ntraffic diagram"
+	      Ports		      [1, 1]
+	      Position		      [135, 224, 170, 256]
+	      Orientation	      "left"
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Fundamental Traffic Diagram"
+	      MaskDescription	      "Traffic diagram for density-velocity re"
+"lationship."
+	      MaskHelp		      "Connect traffic density to the input an"
+"d velocity to the output. Based on figure 4 of J. Whittaker, S. Garside and K"
+". Lindveld (1997) Tracking and predicting a network traffic process, Internat"
+"ional Journal of Forecasting 13, 51-61."
+	      MaskPromptString	      "Minimum velocity:|Critical velocity:|Ma"
+"ximum velocity:|Critical density:|Theoretical density for zero velocity:"
+	      MaskStyleString	      "edit,edit,edit,edit,edit"
+	      MaskTunableValueString  "on,on,on,on,on"
+	      MaskCallbackString      "||||"
+	      MaskEnableString	      "on,on,on,on,on"
+	      MaskVisibilityString    "on,on,on,on,on"
+	      MaskToolTipString	      "on,on,on,on,on"
+	      MaskVariables	      "v1=@1;v2=@2;v3=@3;r1=@4;r3=@5;"
+	      MaskDisplay	      "disp('FTD')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "stm_ftd(4,1)|stm_ftd(4,2)|stm_ftd(4,3)|"
+"stm_ftd(4,4)|stm_ftd(4,5)"
+	      MaskVariableAliases     ",,,,"
+	      System {
+		Name			"density-velocity\ntraffic diagram"
+		Location		[105, 214, 753, 539]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "density"
+		  Position		  [15, 125, 35, 145]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  Position		  [325, 90, 360, 190]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  Position		  [500, 125, 535, 225]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c1"
+		  Position		  [145, 170, 175, 190]
+		  Orientation		  "up"
+		  Value			  "r1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c2"
+		  Position		  [140, 25, 170, 45]
+		  NamePlacement		  "alternate"
+		  Value			  "v3"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c3"
+		  Position		  [326, 280, 474, 305]
+		  Orientation		  "up"
+		  Value			  "1/(1/r3+(v1/v2)*(1/r1-1/r3))"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c4"
+		  Position		  [425, 227, 455, 253]
+		  Value			  "v1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Fcn
+		  Name			  "curve"
+		  Position		  [220, 200, 260, 220]
+		  Expr			  "(v2/(1/r1-1/r3))*(1/u[1]-1/r3)"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "gain"
+		  Position		  [85, 53, 190, 107]
+		  Gain			  "(v3-v2)/r1"
+		  Multiplication	  "Element-wise(K.*u)"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [230, 65, 250, 85]
+		  IconShape		  "rectangular"
+		  Inputs		  "+-"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum2"
+		  Ports			  [2, 1]
+		  Position		  [230, 130, 250, 150]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum3"
+		  Ports			  [2, 1]
+		  Position		  [430, 165, 450, 185]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "velocity"
+		  Position		  [600, 165, 620, 185]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "c4"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -30]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "sum3"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "c3"
+		  SrcPort		  1
+		  Points		  [0, -95]
+		  DstBlock		  "sum3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "curve"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, -35]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c1"
+		  SrcPort		  1
+		  Points		  [0, -20]
+		  DstBlock		  "sum2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum2"
+		  SrcPort		  1
+		  DstBlock		  "Switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "velocity"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c2"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 35]
+		  DstBlock		  "sum1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "density"
+		  SrcPort		  1
+		  Points		  [5, 0; 10, 0]
+		  Branch {
+		    Points		    [0, 75]
+		    Branch {
+		    Points		    [0, 40; 325, 0; 0, -80]
+		    DstBlock		    "sum3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "curve"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "gain"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "sum2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "gain"
+		  SrcPort		  1
+		  DstBlock		  "sum1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 30]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Annotation {
+		  Position		  [437, 17]
+		  VerticalAlignment	  "top"
+		  Text			  "Equations from C.J. Taylor and J. W"
+"hittaker (1998) Statistical Traffic Model\nof the Amsterdam A10 West, CRES TR"
+"/159, Lancaster University.\nJames Taylor - Lancaster University - 29 March 2"
+"002"
+		  FontName		  "Arial"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "flow coefficient"
+	      Position		      [195, 145, 300, 205]
+	      Gain		      "stm_alpha"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "minimum"
+	      Ports		      [2, 1]
+	      Position		      [135, 157, 170, 188]
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Minimum"
+	      MaskDescription	      "Selects minimum of two inputs."
+	      MaskHelp		      "The output of this block is the minimum"
+" of the two input signals."
+	      MaskDisplay	      "disp('MIN')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"minimum"
+		Location		[195, 302, 510, 494]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport1"
+		  Position		  [50, 15, 70, 35]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport2"
+		  Position		  [50, 85, 70, 105]
+		  BackgroundColor	  "magenta"
+		  Port			  "2"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [115, 43, 135, 72]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "switch1"
+		  Position		  [195, 35, 220, 85]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "outport"
+		  Position		  [245, 50, 265, 70]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  DstBlock		  "switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "switch1"
+		  SrcPort		  1
+		  DstBlock		  "outport"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "inport2"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, -20]
+		    DstBlock		    "switch1"
+		    DstPort		    3
+		  }
+		  Branch {
+		    Points		    [0, -30]
+		    DstBlock		    "sum1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "inport1"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, 20]
+		    DstBlock		    "switch1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 25]
+		    DstBlock		    "sum1"
+		    DstPort		    1
+		  }
+		}
+		Annotation {
+		  Position		  [157, 142]
+		  VerticalAlignment	  "top"
+		  Text			  "Output is the minimum of the two in"
+"put signals\nJames Taylor - Lancaster University - 29 March 2002"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "product1"
+	      Ports		      [2, 1]
+	      Position		      [340, 167, 360, 198]
+	      Inputs		      "2"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum1"
+	      Ports		      [2, 1]
+	      Position		      [140, 15, 170, 70]
+	      IconShape		      "rectangular"
+	      Inputs		      "+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum2"
+	      Ports		      [2, 1]
+	      Position		      [340, 39, 360, 66]
+	      IconShape		      "rectangular"
+	      Inputs		      "++"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay1"
+	      Position		      [390, 45, 440, 65]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay2"
+	      Position		      [390, 175, 440, 195]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link velocity\n(km/hour)"
+	      Position		      [40, 230, 60, 250]
+	      Orientation	      "left"
+	      BackgroundColor	      "green"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link flow\n(veh/min)"
+	      Position		      [665, 170, 685, 190]
+	      BackgroundColor	      "green"
+	      Port		      "2"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link density\n(veh/km)"
+	      Position		      [805, 45, 825, 65]
+	      BackgroundColor	      "green"
+	      Port		      "3"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "flow coefficient"
+	      SrcPort		      1
+	      DstBlock		      "product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "product1"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "downstream\nvelocity (km/hour)"
+	      SrcPort		      1
+	      DstBlock		      "minimum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "sum1"
+	      SrcPort		      1
+	      DstBlock		      "density coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "minimum"
+	      SrcPort		      1
+	      DstBlock		      "flow coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay1"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		Points			[310, 0]
+		Branch {
+		  Points		  [0, 185; -460, 0]
+		  Branch {
+		    Points		    [0, -50]
+		    DstBlock		    "product1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "density-velocity\ntraffic diagram"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  DstBlock		  "link density\n(veh/km)"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 45; -145, 0; 0, -40]
+		DstBlock		"sum2"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "density coefficient"
+	      SrcPort		      1
+	      DstBlock		      "sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "sum2"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "density-velocity\ntraffic diagram"
+	      SrcPort		      1
+	      Points		      [0, 0; -20, 0]
+	      Branch {
+		Points			[0, -60]
+		DstBlock		"minimum"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"link velocity\n(km/hour)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay2"
+	      SrcPort		      1
+	      Points		      [60, 0; 0, -5; 20, 0]
+	      Branch {
+		Points			[0, -70; -415, 0; 0, -55]
+		DstBlock		"sum1"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"link flow\n(veh/min)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "upstream flow\n(veh/min)"
+	      SrcPort		      1
+	      DstBlock		      "sum1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "STM Link\n4"
+	  Ports			  [2, 3]
+	  Position		  [510, 124, 560, 206]
+	  BackgroundColor	  "cyan"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "STM Link\n4"
+	    Location		    [87, 192, 724, 526]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "downstream\nvelocity (km/hour)"
+	      Position		      [40, 155, 60, 175]
+	      BackgroundColor	      "magenta"
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "upstream flow\n(veh/min)"
+	      Position		      [40, 20, 60, 40]
+	      BackgroundColor	      "magenta"
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "density coefficient"
+	      Position		      [195, 15, 300, 75]
+	      Gain		      "stm_ks5"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "density-velocity\ntraffic diagram"
+	      Ports		      [1, 1]
+	      Position		      [135, 224, 170, 256]
+	      Orientation	      "left"
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Fundamental Traffic Diagram"
+	      MaskDescription	      "Traffic diagram for density-velocity re"
+"lationship."
+	      MaskHelp		      "Connect traffic density to the input an"
+"d velocity to the output. Based on figure 4 of J. Whittaker, S. Garside and K"
+". Lindveld (1997) Tracking and predicting a network traffic process, Internat"
+"ional Journal of Forecasting 13, 51-61."
+	      MaskPromptString	      "Minimum velocity:|Critical velocity:|Ma"
+"ximum velocity:|Critical density:|Theoretical density for zero velocity:"
+	      MaskStyleString	      "edit,edit,edit,edit,edit"
+	      MaskTunableValueString  "on,on,on,on,on"
+	      MaskCallbackString      "||||"
+	      MaskEnableString	      "on,on,on,on,on"
+	      MaskVisibilityString    "on,on,on,on,on"
+	      MaskToolTipString	      "on,on,on,on,on"
+	      MaskVariables	      "v1=@1;v2=@2;v3=@3;r1=@4;r3=@5;"
+	      MaskDisplay	      "disp('FTD')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "stm_ftd(5,1)|stm_ftd(5,2)|stm_ftd(5,3)|"
+"stm_ftd(5,4)|stm_ftd(5,5)"
+	      MaskVariableAliases     ",,,,"
+	      System {
+		Name			"density-velocity\ntraffic diagram"
+		Location		[105, 214, 753, 539]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "density"
+		  Position		  [15, 125, 35, 145]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  Position		  [325, 90, 360, 190]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  Position		  [500, 125, 535, 225]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c1"
+		  Position		  [145, 170, 175, 190]
+		  Orientation		  "up"
+		  Value			  "r1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c2"
+		  Position		  [140, 25, 170, 45]
+		  NamePlacement		  "alternate"
+		  Value			  "v3"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c3"
+		  Position		  [326, 280, 474, 305]
+		  Orientation		  "up"
+		  Value			  "1/(1/r3+(v1/v2)*(1/r1-1/r3))"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "c4"
+		  Position		  [425, 227, 455, 253]
+		  Value			  "v1"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Fcn
+		  Name			  "curve"
+		  Position		  [220, 200, 260, 220]
+		  Expr			  "(v2/(1/r1-1/r3))*(1/u[1]-1/r3)"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "gain"
+		  Position		  [85, 53, 190, 107]
+		  Gain			  "(v3-v2)/r1"
+		  Multiplication	  "Element-wise(K.*u)"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [230, 65, 250, 85]
+		  IconShape		  "rectangular"
+		  Inputs		  "+-"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum2"
+		  Ports			  [2, 1]
+		  Position		  [230, 130, 250, 150]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum3"
+		  Ports			  [2, 1]
+		  Position		  [430, 165, 450, 185]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "velocity"
+		  Position		  [600, 165, 620, 185]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "c4"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -30]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "sum3"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "c3"
+		  SrcPort		  1
+		  Points		  [0, -95]
+		  DstBlock		  "sum3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "curve"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, -35]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c1"
+		  SrcPort		  1
+		  Points		  [0, -20]
+		  DstBlock		  "sum2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum2"
+		  SrcPort		  1
+		  DstBlock		  "Switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "velocity"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "c2"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 35]
+		  DstBlock		  "sum1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "density"
+		  SrcPort		  1
+		  Points		  [5, 0; 10, 0]
+		  Branch {
+		    Points		    [0, 75]
+		    Branch {
+		    Points		    [0, 40; 325, 0; 0, -80]
+		    DstBlock		    "sum3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "curve"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "gain"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "sum2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "gain"
+		  SrcPort		  1
+		  DstBlock		  "sum1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 30]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Annotation {
+		  Position		  [437, 17]
+		  VerticalAlignment	  "top"
+		  Text			  "Equations from C.J. Taylor and J. W"
+"hittaker (1998) Statistical Traffic Model\nof the Amsterdam A10 West, CRES TR"
+"/159, Lancaster University.\nJames Taylor - Lancaster University - 29 March 2"
+"002"
+		  FontName		  "Arial"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "flow coefficient"
+	      Position		      [195, 145, 300, 205]
+	      Gain		      "stm_alpha"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "minimum"
+	      Ports		      [2, 1]
+	      Position		      [135, 157, 170, 188]
+	      BackgroundColor	      "yellow"
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      MaskType		      "Minimum"
+	      MaskDescription	      "Selects minimum of two inputs."
+	      MaskHelp		      "The output of this block is the minimum"
+" of the two input signals."
+	      MaskDisplay	      "disp('MIN')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"minimum"
+		Location		[195, 302, 510, 494]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"automatic"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport1"
+		  Position		  [50, 15, 70, 35]
+		  BackgroundColor	  "magenta"
+		  Port			  "1"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "inport2"
+		  Position		  [50, 85, 70, 105]
+		  BackgroundColor	  "magenta"
+		  Port			  "2"
+		  LatchInput		  off
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "sum1"
+		  Ports			  [2, 1]
+		  Position		  [115, 43, 135, 72]
+		  IconShape		  "rectangular"
+		  Inputs		  "-+"
+		  SaturateOnIntegerOverflow on
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "switch1"
+		  Position		  [195, 35, 220, 85]
+		  Threshold		  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "outport"
+		  Position		  [245, 50, 265, 70]
+		  BackgroundColor	  "green"
+		  Port			  "1"
+		  OutputWhenDisabled	  "held"
+		  InitialOutput		  "[]"
+		}
+		Line {
+		  SrcBlock		  "sum1"
+		  SrcPort		  1
+		  DstBlock		  "switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "switch1"
+		  SrcPort		  1
+		  DstBlock		  "outport"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "inport2"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, -20]
+		    DstBlock		    "switch1"
+		    DstPort		    3
+		  }
+		  Branch {
+		    Points		    [0, -30]
+		    DstBlock		    "sum1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "inport1"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [75, 0; 0, 20]
+		    DstBlock		    "switch1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 25]
+		    DstBlock		    "sum1"
+		    DstPort		    1
+		  }
+		}
+		Annotation {
+		  Position		  [157, 142]
+		  VerticalAlignment	  "top"
+		  Text			  "Output is the minimum of the two in"
+"put signals\nJames Taylor - Lancaster University - 29 March 2002"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "product1"
+	      Ports		      [2, 1]
+	      Position		      [340, 167, 360, 198]
+	      Inputs		      "2"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum1"
+	      Ports		      [2, 1]
+	      Position		      [140, 15, 170, 70]
+	      IconShape		      "rectangular"
+	      Inputs		      "+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "sum2"
+	      Ports		      [2, 1]
+	      Position		      [340, 39, 360, 66]
+	      IconShape		      "rectangular"
+	      Inputs		      "++"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay1"
+	      Position		      [390, 45, 440, 65]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "unit_delay2"
+	      Position		      [390, 175, 440, 195]
+	      X0		      "z0"
+	      SampleTime	      "dt"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link velocity\n(km/hour)"
+	      Position		      [40, 230, 60, 250]
+	      Orientation	      "left"
+	      BackgroundColor	      "green"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link flow\n(veh/min)"
+	      Position		      [655, 170, 675, 190]
+	      BackgroundColor	      "green"
+	      Port		      "2"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "link density\n(veh/km)"
+	      Position		      [805, 45, 825, 65]
+	      BackgroundColor	      "green"
+	      Port		      "3"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "flow coefficient"
+	      SrcPort		      1
+	      DstBlock		      "product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "product1"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "downstream\nvelocity (km/hour)"
+	      SrcPort		      1
+	      DstBlock		      "minimum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay2"
+	      SrcPort		      1
+	      Points		      [65, 0; 0, -5; 15, 0]
+	      Branch {
+		Points			[0, -70; -415, 0; 0, -55]
+		DstBlock		"sum1"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"link flow\n(veh/min)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "sum1"
+	      SrcPort		      1
+	      DstBlock		      "density coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "minimum"
+	      SrcPort		      1
+	      DstBlock		      "flow coefficient"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "unit_delay1"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		Points			[310, 0]
+		Branch {
+		  Points		  [0, 185; -460, 0]
+		  Branch {
+		    Points		    [0, -50]
+		    DstBlock		    "product1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "density-velocity\ntraffic diagram"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  DstBlock		  "link density\n(veh/km)"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 45; -145, 0; 0, -40]
+		DstBlock		"sum2"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "density coefficient"
+	      SrcPort		      1
+	      DstBlock		      "sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "sum2"
+	      SrcPort		      1
+	      DstBlock		      "unit_delay1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "density-velocity\ntraffic diagram"
+	      SrcPort		      1
+	      Points		      [0, 0; -20, 0]
+	      Branch {
+		Points			[0, -60]
+		DstBlock		"minimum"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"link velocity\n(km/hour)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "upstream flow\n(veh/min)"
+	      SrcPort		      1
+	      DstBlock		      "sum1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [740, 133, 770, 147]
+	  BackgroundColor	  "red"
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [740, 248, 770, 262]
+	  BackgroundColor	  "red"
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  Position		  [740, 333, 770, 347]
+	  BackgroundColor	  "red"
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "STM Link\n3"
+	  SrcPort		  2
+	  Points		  [20, 0; 0, 25; 10, 0]
+	  Branch {
+	    Points		    [0, 0]
+	    DstBlock		    "STM Link\n4"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 55]
+	    DstBlock		    "Mux1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  Labels		  [1, 0]
+	  SrcBlock		  "STM Link\n4"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -30]
+	  Branch {
+	    Points		    [0, -20; -195, 0]
+	    DstBlock		    "STM Link\n3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    DstBlock		    "Mux2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux2"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    DstBlock		    "STM Link\n1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 100]
+	    DstBlock		    "Mux1"
+	    DstPort		    6
+	  }
+	}
+	Line {
+	  SrcBlock		  "STM Link\n4"
+	  SrcPort		  2
+	  Points		  [35, 0; 0, 65]
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "STM Link\n4"
+	  SrcPort		  3
+	  Points		  [15, 0; 0, 120]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "STM Link\n3"
+	  SrcPort		  3
+	  Points		  [10, 0; 0, 140]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "STM Link\n1"
+	  SrcPort		  3
+	  Points		  [0, 185]
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "In3"
+	  SrcPort		  1
+	  Points		  [205, 0]
+	  DstBlock		  "STM\nJunction"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "STM\nJunction"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -65]
+	  Branch {
+	    Points		    [0, -5; -185, 0]
+	    DstBlock		    "STM Link\n2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [235, 0; 0, 70]
+	    DstBlock		    "Mux2"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "STM Link\n2"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -80]
+	  Branch {
+	    Points		    [0, -5; -175, 0]
+	    DstBlock		    "STM Link\n1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [350, 0; 0, 100]
+	    DstBlock		    "Mux2"
+	    DstPort		    4
+	  }
+	}
+	Line {
+	  SrcBlock		  "STM Link\n1"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 20; 5, 0]
+	  Branch {
+	    DstBlock		    "STM Link\n2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "Mux1"
+	    DstPort		    5
+	  }
+	}
+	Line {
+	  SrcBlock		  "STM Link\n2"
+	  SrcPort		  2
+	  Points		  [20, 0]
+	  Branch {
+	    DstBlock		    "STM\nJunction"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 100]
+	    DstBlock		    "Mux1"
+	    DstPort		    4
+	  }
+	}
+	Line {
+	  SrcBlock		  "STM\nJunction"
+	  SrcPort		  2
+	  Points		  [15, 0; 0, 20; 15, 0]
+	  Branch {
+	    DstBlock		    "STM Link\n3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "Mux1"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "STM Link\n3"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -55]
+	  Branch {
+	    Points		    [0, -5; -185, 0]
+	    DstBlock		    "STM\nJunction"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [125, 0; 0, 45]
+	    DstBlock		    "Mux2"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "STM Link\n2"
+	  SrcPort		  3
+	  Points		  [15, 0; 0, 170]
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "STM\nJunction"
+	  SrcPort		  3
+	  Points		  [25, 0; 0, 155]
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [0, -25; -235, 0]
+	  DstBlock		  "STM Link\n4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "STM Link\n1"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -90; 525, 0]
+	  DstBlock		  "Mux2"
+	  DstPort		  5
+	}
+	Annotation {
+	  Position		  [757, 175]
+	  Text			  "Link\nVelocities"
+	}
+	Annotation {
+	  Position		  [758, 288]
+	  Text			  "Link\nFlows"
+	}
+	Annotation {
+	  Position		  [470, 152]
+	  Text			  "q(s+1,t)"
+	}
+	Annotation {
+	  Position		  [748, 91]
+	  Text			  "v(s+3,t)"
+	}
+	Annotation {
+	  Position		  [394, 17]
+	  Text			  "STM TRAFFIC CORRIDOR OPEN LOOP EXPERIMENTS"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Position		  [77, 355]
+	  Text			  "On-ramp flow"
+	}
+	Annotation {
+	  Position		  [757, 375]
+	  Text			  "Link\nDensities"
+	}
+	Annotation {
+	  Position		  [128, 112]
+	  Text			  "S-2"
+	  FontName		  "Arial"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Position		  [227, 110]
+	  Text			  "S-1"
+	  FontName		  "Arial"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Position		  [324, 111]
+	  Text			  "S"
+	  FontName		  "Arial"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Position		  [426, 110]
+	  Text			  "S+1"
+	  FontName		  "Arial"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Position		  [532, 115]
+	  Text			  "S+2"
+	  FontName		  "Arial"
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  Position		  [63, 210]
+	  Text			  "q(s-3,t)"
+	}
+	Annotation {
+	  Position		  [88, 400]
+	  Text			  "Statistical Traffi Model (STM)\nfor a Traff"
+"ic Corridor\nPeriklis Kontoroupis\nLancaster University "
+	  FontName		  "Arial"
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Subsystem"
+      SrcPort		      1
+      Points		      [60, 0; 0, 90]
+      DstBlock		      "Logged macroscopic\noutput variables"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Boundary\nconditions"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Boundary\nconditions"
+      SrcPort		      2
+      DstBlock		      "Subsystem"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Subsystem"
+      SrcPort		      3
+      Points		      [25, 0; 0, -90]
+      DstBlock		      "Logged macroscopic\noutput variables"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Subsystem"
+      SrcPort		      2
+      DstBlock		      "Logged macroscopic\noutput variables"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Boundary\nconditions"
+      SrcPort		      3
+      DstBlock		      "Subsystem"
+      DstPort		      3
+    }
+  }
+}
